@@ -71,7 +71,7 @@ public struct LineChartView: View {
                                 .font(.callout)
                                 .foregroundColor(self.colorScheme == .dark ? self.darkModeStyle.legendTextColor :self.style.legendTextColor)
                         }
-                        HStack {
+                        /**HStack {
                             
                             if (self.rateValue ?? 0 != 0)
                             {
@@ -82,7 +82,7 @@ public struct LineChartView: View {
                                 }
                                 Text("\(self.rateValue!)%")
                             }
-                        }
+                        }**/
                     }
                     .transition(.opacity)
                     .animation(.easeIn(duration: 0.1))
