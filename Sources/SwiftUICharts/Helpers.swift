@@ -3,7 +3,7 @@
 //
 //
 //  Created by András Samu on 2019. 07. 19..
-//
+//  Personal Changes
 
 import Foundation
 import SwiftUI
