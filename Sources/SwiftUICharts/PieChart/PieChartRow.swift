@@ -12,7 +12,7 @@ public struct PieChartRow : View {
     var data: [Double]
     var backgroundColor: Color
     var accentColor: Color
-    var multicolor[Color] = [Color(hexString: "#FF782C"),Color(hexString: "#C2E8FF"),Color(hexString: "#7B75FF"),Color(hexString: "#6FEAFF"),Color(hexString: "#1B205E")]
+    var multicolor: [Color] = [Color(hexString: "#FF782C"),Color(hexString: "#C2E8FF"),Color(hexString: "#7B75FF"),Color(hexString: "#6FEAFF"),Color(hexString: "#1B205E")]
     var slices: [PieSlice] {
         var tempSlices:[PieSlice] = []
         var lastEndDeg:Double = 0
