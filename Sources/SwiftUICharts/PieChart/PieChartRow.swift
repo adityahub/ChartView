@@ -12,6 +12,7 @@ public struct PieChartRow : View {
     var data: [Double]
     var backgroundColor: Color
     var accentColor: Color
+    var multicolor[Color] = [Color(hexString: "#FF782C"),Color(hexString: "#C2E8FF"),Color(hexString: "#7B75FF"),Color(hexString: "#6FEAFF"),Color(hexString: "#1B205E")]
     var slices: [PieSlice] {
         var tempSlices:[PieSlice] = []
         var lastEndDeg:Double = 0
@@ -29,7 +30,7 @@ public struct PieChartRow : View {
         GeometryReader { geometry in
             ZStack{
                 ForEach(0..<self.slices.count){ i in
-                    PieChartCell(rect: geometry.frame(in: .local), startDeg: self.slices[i].startDeg, endDeg: self.slices[i].endDeg, index: i, backgroundColor: self.backgroundColor,accentColor: self.accentColor)
+                    PieChartCell(rect: geometry.frame(in: .local), startDeg: self.slices[i].startDeg, endDeg: self.slices[i].endDeg, index: i, backgroundColor: self.backgroundColor,accentColor: self.multicolor[i])
                 }
             }
         }
